@@ -2,7 +2,17 @@
 name = "sprite_extractor"
 version = "0.1.0"
 edition = "2021"
+author = "Jacob Cheney <jacobcdev@gmail.com>"
+about = "Extracts sprites from image files"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.1.4", features = ["derive"] }
+image = "0.24.5"
+itertools = "0.10.5"
+plist = {version="1.4.0", features=["serde"]}
+rayon = "1.6.1"
+serde = {version = "1.0.152", features = ["derive"]}
+serde_json = "1.0.91"

@@ -1,0 +1,93 @@
+{
+  "frames": {
+    "fx_bladestorm_002.png": {
+      "frame": "{{63,196},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_008.png": {
+      "frame": "{{0,147},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_005.png": {
+      "frame": "{{63,49},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_003.png": {
+      "frame": "{{63,147},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_007.png": {
+      "frame": "{{0,196},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_009.png": {
+      "frame": "{{0,98},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_000.png": {
+      "frame": "{{63,0},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_010.png": {
+      "frame": "{{0,49},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_011.png": {
+      "frame": "{{0,0},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_001.png": {
+      "frame": "{{126,0},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_006.png": {
+      "frame": "{{126,49},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    },
+    "fx_bladestorm_004.png": {
+      "frame": "{{63,98},{62,48}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{62,48}}",
+      "sourceSize": "{62,48}"
+    }
+  },
+  "metadata": {
+    "format": 4,
+    "size": "{256,256}",
+    "textureFileName": "fx_bladestorm.png"
+  }
+}
