@@ -6,7 +6,6 @@ use std::fs::{self, DirEntry};
 use std::path::Path;
 use itertools::Itertools;
 use std::ffi::OsString;
-use std::path::PathBuf;
 
 fn vec_to_tuples(v: &Vec<DirEntry>) -> Vec<OsString> {
 
@@ -17,9 +16,28 @@ fn vec_to_tuples(v: &Vec<DirEntry>) -> Vec<OsString> {
     .collect()
 }
 
-
 fn main() {
+    let a = Args::parse();
 
+    if let Ok(fdb) = FrameDataBuilder::new().from_args(a) {
+        match fdb.build() {
+            Ok(fd) => {
+                //let data = fd.get_frames_as_buffer_vec();
+
+                // TODO figure out how to actually stitch images together by using the image buffers
+
+
+                //fd.save();
+                //fd.save_to_long_image();
+                fd.save_to_ordered_and_mapped_frames();
+            }, 
+            Err(e) => {
+                println!("Got error: {:?}", e);
+            }
+        }
+    }
+
+    /* 
     let resource_path = Path::new("../duelyst/app/resources/units/");
     let paths: Vec<DirEntry> = fs::read_dir(resource_path).unwrap().map(|p| p.unwrap()).collect();
 
@@ -29,11 +47,6 @@ fn main() {
     let mut handles = vec![];
 
     for p in t.iter_mut() {
-
-        //println!("Path: {:?}", p);
-
-        //let ao = OsString::from("hello/");
-        //println!("Join path: {:?}", resource_path.to_path_buf().join("hello/").join("hello"));
 
         let fp = PathBuf::from(resource_path.to_path_buf().join(p.to_str().unwrap()).with_extension("plist"));
         let ip = PathBuf::from(resource_path.to_path_buf().join(p.to_str().unwrap()).with_extension("png"));
@@ -62,14 +75,6 @@ fn main() {
     
     for handle in handles {
         handle.join().unwrap();
-    }
-    //visit_dirs(Path::new(&resource_path), &|e: &DirEntry| println!("File: {:?}", e.file_name())).unwrap();
-    /* 
-    let args = Args::parse();
-    if let Ok(fdb) = FrameDataBuilder::new().from_args(args) {
-        let fd = fdb.build();
-
-        fd.save();
     }
     */
 }
